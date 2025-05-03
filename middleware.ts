@@ -17,10 +17,10 @@ export default async function middleware(req: NextRequest) {
     return NextResponse.redirect(new URL("/dashboard", req.url))
   }
 
-  // Redirect unauthenticated users away from protected pages
-  if (!isAuthenticated && isDashboardPage) {
-    return NextResponse.redirect(new URL("/login", req.url))
-  }
+  // // Redirect unauthenticated users away from protected pages
+  // if (!isAuthenticated && isDashboardPage) {
+  //   return NextResponse.redirect(new URL("/login", req.url))
+  // }
 
   return NextResponse.next()
 }

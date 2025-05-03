@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function HeroSection() {
   return (
@@ -20,7 +20,7 @@ export function HeroSection() {
               Elevate Your Resume with <span className="text-primary">AI Analysis</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl">
-              TalentScore-AI analyzes your resume against industry standards and provides 
+              TalentScore-AI analyzes your resume against industry standards and provides
               actionable feedback to help you land your dream job.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -46,26 +46,25 @@ export function HeroSection() {
               </p>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="relative"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="relative lg:absolute lg:inset-0 rounded-lg overflow-hidden shadow-xl border bg-white dark:bg-gray-900">
-              <div className="p-4 sm:p-6 h-[480px] w-full">
-                <Image
-                  src="https://images.pexels.com/photos/3786748/pexels-photo-3786748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
-                  alt="Resume Analysis Dashboard"
-                  fill
-                  className="object-cover rounded-md"
-                />
-              </div>
+            <div className="relative w-full h-[480px] rounded-lg overflow-hidden shadow-xl border bg-white dark:bg-gray-900">
+              <Image
+                src="https://images.pexels.com/photos/3786748/pexels-photo-3786748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                alt="Resume Analysis Dashboard"
+                fill
+                className="object-cover rounded-md"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }

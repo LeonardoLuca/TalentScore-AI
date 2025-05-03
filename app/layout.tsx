@@ -21,7 +21,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <AuthProvider>
-          <ThemeProvider
+        {children}
+          {/* <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
@@ -29,7 +30,7 @@ export default function RootLayout({
           >
             {children}
             <Toaster />
-          </ThemeProvider>
+          </ThemeProvider> */}
         </AuthProvider>
       </body>
     </html>
