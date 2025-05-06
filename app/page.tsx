@@ -9,17 +9,17 @@ import { Footer } from '@/components/layout/footer'
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="container-custom py-6">
-        <div className="flex items-center justify-between">
+      <header className="container-custom w-full py-6">
+        <div className="flex items-center justify-between w-full">
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-xl font-bold text-primary">TalentScore-AI</span>
           </Link>
           <div className="flex items-center space-x-4">
             <Link href="/login">
-              <Button variant="ghost" size="sm">Login</Button>
+              <Button size="sm">Login</Button>
             </Link>
             <Link href="/register">
-              <Button size="sm">Sign Up</Button>
+              <Button size="sm" variant="outline">Sign Up</Button>
             </Link>
           </div>
         </div>
