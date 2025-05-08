@@ -7,9 +7,9 @@ export default function LoginLayout({
   }) {
     return (
       <div className="min-h-screen bg-background">
-        <main className="container mx-auto flex min-h-screen items-center">
+        
           {children}
-        </main>
+        
       </div>
     )
   }
