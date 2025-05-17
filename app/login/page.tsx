@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { UserAuthForm } from "@/components/auth/user-auth-form"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Login | TalentScore-AI",
@@ -46,6 +47,14 @@ export default function LoginPage() {
 
       {/* Right side with login form */}
       <div className="w-full lg:w-1/2 flex items-center justify-center p-8">
+      {/* header fixo no canto superior-direito */}
+        <header className="absolute top-0 right-0 p-6">
+          <div className="flex items-center space-x-2">
+            <Link href="/register">
+              <Button size="sm">Sign Up</Button>
+            </Link>
+          </div>
+        </header>
         <div className="max-w-md w-full space-y-8">
           <div className="flex flex-col space-y-2 text-center">
             <h1 className="text-2xl font-semibold tracking-tight">
