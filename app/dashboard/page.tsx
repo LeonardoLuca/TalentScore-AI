@@ -12,7 +12,7 @@ export default function DashboardPage() {
     <DashboardShell>
       <DashboardHeader
         heading="Dashboard"
-        text="Welcome to TalentScore-AI. Upload your resume and get detailed analysis."
+        text="Welcome {userName} to TalentScore-AI. Upload your resume and get detailed analysis."
       >
         <Link href="/analysis/new">
           <Button>Start New Analysis</Button>
